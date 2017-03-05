@@ -17,8 +17,8 @@ try{
         }
         // run test in Jenkins Slave
         stage('buildAndTest'){
-             sh "npm build"
-             sh "npm --version"
+             sh "npm install"
+             sh "npm root"
              sh "ls -l"
         }
 

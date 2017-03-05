@@ -18,6 +18,7 @@ try{
         // run test in Jenkins Slave
         stage('buildAndTest'){
              sh "npm build"
+             sh "ls -l"
         }
 
         // trigger Build on OpenShift
